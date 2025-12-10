@@ -1,0 +1,282 @@
+/* Custom utilities for missing Tailwind classes */
+.fixed {
+  position: fixed;
+}
+
+.top-6 {
+  top: 1.5rem;
+}
+
+.right-6 {
+  right: 1.5rem;
+}
+
+.top-20 {
+  top: 5rem;
+}
+
+.w-52 {
+  width: 13rem;
+}
+
+.w-full {
+  width: 100%;
+}
+
+.max-w-3xl {
+  max-width: 48rem;
+}
+
+.max-w-lg {
+  max-width: 32rem;
+}
+
+.max-w-md {
+  max-width: 28rem;
+}
+
+.max-w-2xl {
+  max-width: 42rem;
+}
+
+.py-12 {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.py-16 {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.px-8 {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.px-12 {
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+
+.py-4 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.py-5 {
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+}
+
+.pl-6 {
+  padding-left: 1.5rem;
+}
+
+.p-5 {
+  padding: 1.25rem;
+}
+
+.mb-8 {
+  margin-bottom: 2rem;
+}
+
+.mb-10 {
+  margin-bottom: 2.5rem;
+}
+
+.mb-12 {
+  margin-bottom: 3rem;
+}
+
+.ml-1 {
+  margin-left: 0.25rem;
+}
+
+.w-20 {
+  width: 5rem;
+}
+
+.h-20 {
+  height: 5rem;
+}
+
+.w-10 {
+  width: 2.5rem;
+}
+
+.h-10 {
+  height: 2.5rem;
+}
+
+.text-3xl {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+}
+
+.text-4xl {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+}
+
+.text-5xl {
+  font-size: 3rem;
+  line-height: 1;
+}
+
+.text-xl {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
+.font-bold {
+  font-weight: 700;
+}
+
+.font-semibold {
+  font-weight: 600;
+}
+
+.font-medium {
+  font-weight: 500;
+}
+
+.leading-relaxed {
+  line-height: 1.625;
+}
+
+.drop-shadow {
+  filter: drop-shadow(0 1px 2px rgb(0 0 0 / 0.1)) drop-shadow(0 1px 1px rgb(0 0 0 / 0.06));
+}
+
+.drop-shadow-lg {
+  filter: drop-shadow(0 10px 8px rgb(0 0 0 / 0.04)) drop-shadow(0 4px 3px rgb(0 0 0 / 0.1));
+}
+
+.border-l-8 {
+  border-left-width: 8px;
+  border-left-style: solid;
+}
+
+.border-red-500 {
+  border-color: #ef4444;
+}
+
+.border-red-400 {
+  border-color: #f87171;
+}
+
+.border-yellow-400 {
+  border-color: #facc15;
+}
+
+.border-gray-100 {
+  border-color: #f3f4f6;
+}
+
+.bg-gray-50 {
+  background-color: #f9fafb;
+}
+
+.bg-blue-100 {
+  background-color: #dbeafe;
+}
+
+.bg-green-100 {
+  background-color: #dcfce7;
+}
+
+.bg-purple-100 {
+  background-color: #f3e8ff;
+}
+
+.bg-red-50 {
+  background-color: #fef2f2;
+}
+
+.bg-green-50 {
+  background-color: #f0fdf4;
+}
+
+.text-blue-600 {
+  color: #2563eb;
+}
+
+.text-green-600 {
+  color: #16a34a;
+}
+
+.text-purple-600 {
+  color: #9333ea;
+}
+
+.text-red-500 {
+  color: #ef4444;
+}
+
+.text-red-600 {
+  color: #dc2626;
+}
+
+.text-yellow-700 {
+  color: #a16207;
+}
+
+.text-gray-800 {
+  color: #1f2937;
+}
+
+.text-white\/90 {
+  color: rgb(255 255 255 / 0.9);
+}
+
+.text-white\/95 {
+  color: rgb(255 255 255 / 0.95);
+}
+
+.bg-pink-300\/60 {
+  background-color: rgb(249 168 212 / 0.6);
+}
+
+.bg-pink-300\/70 {
+  background-color: rgb(249 168 212 / 0.7);
+}
+
+.backdrop-blur-sm {
+  backdrop-filter: blur(4px);
+}
+
+.rounded-t-\[2\.5rem\] {
+  border-top-left-radius: 2.5rem;
+  border-top-right-radius: 2.5rem;
+}
+
+.rounded-\[2\.5rem\] {
+  border-radius: 2.5rem;
+}
+
+.overflow-hidden {
+  overflow: hidden;
+}
+
+.transition-all {
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.duration-200 {
+  transition-duration: 200ms;
+}
+
+.hover\:scale-105:hover {
+  transform: scale(1.05);
+}
+
+.shadow-xl {
+  box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+}
+
+.border {
+  border-width: 1px;
+}
