@@ -25,7 +25,7 @@ export function DonationSection() {
       {/* QR Code */}
       <div className="bg-white p-6 rounded-2xl inline-block mb-6 shadow-lg">
         <img 
-          src="/src/assets/img.png" 
+          src="/public/img.png" 
           alt="QR Code để donate" 
           className="w-48 h-48 rounded-xl object-cover"
         />
