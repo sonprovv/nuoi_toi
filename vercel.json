@@ -1,15 +1,11 @@
 {
-  "version": 2,
-  "outputDirectory": "build",
   "buildCommand": "npm run build",
-  "devCommand": "npm run dev",
-  "installCommand": "npm install",
+  "outputDirectory": "dist",
   "framework": "vite",
-  "routes": [
+  "rewrites": [
     {
-      "src": "/[^.]+",
-      "dest": "/",
-      "status": 200
+      "source": "/(.*)",
+      "destination": "/index.html"
     }
   ],
   "headers": [
