@@ -3,6 +3,7 @@ import { LanguageSwitcher } from './components/LanguageSwitcher';
 import { FeaturesSection } from './components/FeaturesSection';
 import { ComparisonSection } from './components/ComparisonSection';
 import { DonationSection } from './components/DonationSection';
+import { DonationTracker } from './components/DonationTracker';
 import { BudgetSection } from './components/BudgetSection';
 import { VideoSection } from './components/VideoSection';
 import { Footer } from './components/Footer';
@@ -14,7 +15,7 @@ export default function App() {
       <div className="min-h-screen bg-gradient-to-br from-purple-500 via-purple-400 to-purple-600 py-6">
         {/* Language Switcher cố định ở góc phải trên */}
         <LanguageSwitcher />
-        
+
         {/* Main container box với bo tròn giống hình */}
         <div className="max-w-3xl mx-auto bg-white rounded-[2.5rem] shadow-2xl overflow-hidden">
           <Header />
@@ -22,6 +23,7 @@ export default function App() {
             <FeaturesSection />
             <ComparisonSection />
             <DonationSection />
+            <DonationTracker />
             <BudgetSection />
             <VideoSection />
           </main>
