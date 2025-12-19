@@ -68,7 +68,7 @@ const translations = {
     'budget.chart': '📊 Biểu đồ chi tiết cập nhật hàng tuần trên website!',
     
     // Donation
-    'donation.title': 'DONATE NGAY ĐI, NẾU BẠN ĐANG CUỐI!',
+    'donation.title': 'DONATE NGAY ĐI, NẾU BẠN ĐANG CƯỜI!',
     'donation.description': 'Quét mã QR này để nuôi tôi (và nhận bản sao kê ngay lập tức!) hoặc vào link này',
     'donation.transfer': '💸 Chuyển xong là có mail tự động! 💸',
     'donation.button': '🎁 TÔI MUỐN NUÔI BẠN!',
@@ -142,7 +142,7 @@ const translations = {
     'budget.chart': '📊 Detailed charts updated weekly on website!',
     
     // Donation
-    'donation.title': 'DONATE NOW IF YOU\'RE BROKE!',
+    'donation.title': 'DONATE NOW IF YOU\'RE LAUGHING!',
     'donation.description': 'Scan this QR code to raise me (and get instant reports!) or visit this link',
     'donation.transfer': '💸 Automatic email after transfer! 💸',
     'donation.button': '🎁 I WANT TO RAISE YOU!',
@@ -216,7 +216,7 @@ const translations = {
     'budget.chart': '📊 Graphiques détaillés mis à jour chaque semaine sur le site!',
     
     // Donation
-    'donation.title': 'DONNEZ MAINTENANT SI VOUS ÊTES FAUCHÉ!',
+    'donation.title': 'DONNEZ MAINTENANT SI VOUS RIEZ!',
     'donation.description': 'Scannez ce code QR pour m\'élever (et obtenez des rapports instantanés!) ou visitez ce lien',
     'donation.transfer': '💸 Email automatique après le virement! 💸',
     'donation.button': '🎁 JE VEUX VOUS ÉLEVER!',
@@ -291,7 +291,7 @@ const translations = {
     'budget.chart': '📊 Detaljerede diagrammer opdateret ugentligt på hjemmesiden!',
     
     // Donation
-    'donation.title': 'DONER NU HVIS DU ER BROKE!',
+    'donation.title': 'DONER NU HVIS DU GRINER!',
     'donation.description': 'Scan denne QR kode for at opdrage mig (og få øjeblikkelige rapporter!) eller besøg dette link',
     'donation.transfer': '💸 Automatisk email efter overførsel! 💸',
     'donation.button': '🎁 JEG VIL OPDRAGE DIG!',
@@ -365,7 +365,7 @@ const translations = {
     'budget.chart': '📊 ウェブサイトで毎週更新される詳細チャート！',
     
     // Donation
-    'donation.title': '今すぐ寄付して！',
+    'donation.title': '笑っているなら今すぐ寄付して！',
     'donation.description': 'このQRコードをスキャンして私を育てて（即座に報告を受け取れます！）またはこのリンクを訪問',
     'donation.transfer': '💸 送金後に自動メール！ 💸',
     'donation.button': '🎁 あなたを育てたい！',
@@ -439,7 +439,7 @@ const translations = {
     'budget.chart': '📊 网站上每周更新的详细图表！',
     
     // Donation
-    'donation.title': '现在就捐款吧！',
+    'donation.title': '如果你在笑就现在捐款吧！',
     'donation.description': '扫描此二维码养我（并获得即时报告！）或访问此链接',
     'donation.transfer': '💸 转账后自动发邮件！ 💸',
     'donation.button': '🎁 我想养你！',
@@ -513,7 +513,7 @@ const translations = {
     'budget.chart': '📊 Подробные графики обновляются еженедельно на сайте!',
     
     // Donation
-    'donation.title': 'ПОЖЕРТВУЙ СЕЙЧАС!',
+    'donation.title': 'ПОЖЕРТВУЙ СЕЙЧАС, ЕСЛИ СМЕЕШЬСЯ!',
     'donation.description': 'Отсканируйте этот QR код чтобы воспитать меня (и получите мгновенные отчеты!) или посетите эту ссылку',
     'donation.transfer': '💸 Автоматическое письмо после перевода! 💸',
     'donation.button': '🎁 Я ХОЧУ ВОСПИТАТЬ ТЕБЯ!',

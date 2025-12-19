@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generate QR Code for Buy Me a Coffee</title>
+    <script src="https://cdn.jsdelivr.net/npm/qrcode@1.5.3/build/qrcode.min.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            text-align: center;
+        }
+        .qr-container {
+            margin: 20px 0;
+            padding: 20px;
+            border: 2px solid #ddd;
+            border-radius: 10px;
+            background: #f9f9f9;
+        }
+        canvas {
+            border: 1px solid #ccc;
+            border-radius: 10px;
+        }
+        button {
+            background: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin: 10px;
+        }
+        button:hover {
+            background: #45a049;
+        }
+        .download-link {
+            display: none;
+            margin: 10px;
+            padding: 10px;
+            background: #2196F3;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>🎯 Generate QR Code cho Buy Me a Coffee</h1>
+    
+    <div class="qr-container">
+        <h3>QR Code cho: https://buymeacoffee.com/nuoitoi.com</h3>
+        <canvas id="qrcode"></canvas>
+        <br>
+        <button onclick="generateQR()">Tạo QR Code</button>
+        <button onclick="downloadQR()">Download PNG</button>
+        <a id="downloadLink" class="download-link" download="bmac-qr-code.png">Download QR Code</a>
+    </div>
+
+    <div class="qr-container">
+        <h3>🎨 Tùy chỉnh QR Code</h3>
+        <label>Kích thước: </label>
+        <select id="size">
+            <option value="200">200x200</option>
+            <option value="300" selected>300x300</option>
+            <option value="400">400x400</option>
+            <option value="500">500x500</option>
+        </select>
+        <br><br>
+        
+        <label>Màu foreground: </label>
+        <input type="color" id="fgColor" value="#000000">
+        <br><br>
+        
+        <label>Màu background: </label>
+        <input type="color" id="bgColor" value="#ffffff">
+        <br><br>
+        
+        <button onclick="generateCustomQR()">Tạo QR Code Tùy Chỉnh</button>
+    </div>
+
+    <div class="qr-container">
+        <h3>📱 Hướng dẫn sử dụng</h3>
+        <ol style="text-align: left;">
+            <li>Click "Tạo QR Code" để generate QR code cơ bản</li>
+            <li>Hoặc tùy chỉnh màu sắc, kích thước rồi click "Tạo QR Code Tùy Chỉnh"</li>
+            <li>Click "Download PNG" để tải về</li>
+            <li>Thay thế file <code>public/img.png</code> bằng file vừa tải</li>
+            <li>Deploy lại website</li>
+        </ol>
+    </div>
+
+    <script>
+        const canvas = document.getElementById('qrcode');
+        const downloadLink = document.getElementById('downloadLink');
+        const bmacUrl = 'https://buymeacoffee.com/nuoitoi.com';
+
+        function generateQR() {
+            QRCode.toCanvas(canvas, bmacUrl, {
+                width: 300,
+                margin: 2,
+                color: {
+                    dark: '#000000',
+                    light: '#ffffff'
+                }
+            }, function (error) {
+                if (error) {
+                    console.error(error);
+                    alert('Lỗi tạo QR code: ' + error);
+                } else {
+                    console.log('QR code generated successfully!');
+                    downloadLink.style.display = 'inline-block';
+                }
+            });
+        }
+
+        function generateCustomQR() {
+            const size = parseInt(document.getElementById('size').value);
+            const fgColor = document.getElementById('fgColor').value;
+            const bgColor = document.getElementById('bgColor').value;
+
+            QRCode.toCanvas(canvas, bmacUrl, {
+                width: size,
+                margin: 2,
+                color: {
+                    dark: fgColor,
+                    light: bgColor
+                }
+            }, function (error) {
+                if (error) {
+                    console.error(error);
+                    alert('Lỗi tạo QR code: ' + error);
+                } else {
+                    console.log('Custom QR code generated successfully!');
+                    downloadLink.style.display = 'inline-block';
+                }
+            });
+        }
+
+        function downloadQR() {
+            const dataURL = canvas.toDataURL('image/png');
+            downloadLink.href = dataURL;
+            downloadLink.click();
+        }
+
+        // Generate QR code khi load trang
+        window.onload = function() {
+            generateQR();
+        };
+    </script>
+</body>
+</html>
